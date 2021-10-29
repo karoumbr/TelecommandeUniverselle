@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         }
         final ArrayAdapter adaptateur = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1,liste);
         listeDispositifs.setAdapter(adaptateur);
-        listeDispositifs.setOnClickListener((View.OnClickListener) monListeClickListener);
+         listeDispositifs.setOnItemClickListener((AdapterView.OnItemClickListener) monListeClickListener);
     }
 
     private AdapterView.OnItemClickListener monListeClickListener = new AdapterView.OnItemClickListener() {
